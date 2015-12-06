@@ -28,8 +28,8 @@ Policy中的元素见【名词解释】
 	* 然后再生成ASM Request：
 	
 	![Imgur](./Reg-Auth-resource/2.4.png)
-		* requestType包括：GetInfo, Register, Authenticate, Deregister, GetRegistrations, OpenSettings		* authenticatorIndex由GetInfo方法获得。		* 在注册过程中，args就是RegisterIn Object
-更详尽的ASM Register Request处理过程如下:  
+		* requestType包括：GetInfo, Register, Authenticate, Deregister, GetRegistrations, OpenSettings  		* authenticatorIndex由GetInfo方法获得。  		* 在注册过程中，args就是RegisterIn Object  
+  更详尽的ASM Register Request处理过程如下:  
 ![](./Reg-Auth-resource/2.1.png)    
 
 * 1.通过`authenticatorIndex`定位认证器（之前会让用户选择一个认证器来注册，由此获得`authenticatorIndex`）  
