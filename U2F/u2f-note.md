@@ -100,7 +100,7 @@ RP验证了签名，存储公钥和key handle。
 ###Registration
 认证器在收到FIDO Client的Registration Request Message后，参照Registration Response Message结构：  
 ![](./res/RawMessage-RegistrationResponse.png)  
-由上可见，认证器需要生成：公钥(65 byte，生成算法是什么？：ECDSA-secp256k1)，key handle(生成这个的key wrap算法是什么？)，attestation certificate(证书是什么样的？)，和签名(签名算法是什么？)  
+由上可见，认证器需要生成：公钥(65 byte，生成算法是什么？：This is the (uncompressed) x,y-representation of a curve point on the P-256 NIST elliptic curve)，key handle(生成这个的key wrap算法是什么？)，attestation certificate(证书是什么样的？)，和签名(签名算法是什么？:ECDSA signature (on P-256))  
 key handle用于定位生成的key pair。包含 私钥priv key, appid。  
 RP验证了签名，存储公钥和key handle。  
 
